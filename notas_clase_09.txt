@@ -1,0 +1,13 @@
+Branches y merge en git
+
+cada commit es una version diferente
+una rama es una copia de la rama master y se renombra
+todos los commits de la rama nueva no altera la rama master
+
+
+la union de las ramas se llaman merge
+
+
+
+NOTA IMPORTANTE 
+cuando se encuetra un bug y de arregla se debe generar una rama nueva que se llama hotFix (arrego en caliente ) alli se hace el cambio y se hacen las pruebas, despues se prueban en la rama actual ( merge )

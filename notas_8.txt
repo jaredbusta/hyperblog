@@ -1,0 +1,18 @@
+staging y los repositorios
+
+stagin funciona en ram y se crea el repositorio ( carpeta  .git  )
+	todos los cambios se guardan en el staging area. ( cada vez que se ejecuta el comando git add )
+	el archivo esta espedando a que se envie al repositorio
+	commit => el archivo se va al repositorio
+		nombre por defecto del repositorio es  Master
+
+cuando el archivo no ha sido agregado, este se encuentra en estado untrack (sin rastrear )
+
+
+traer un cambio que  esta en el repositorio: 
+se va a la rama y se usa el checkout ( se puede traer, todos los cambios, solo unos cuantos cambios de ciertos archivos o solo los cambios de un solo arcivo )
+
+
+las ramas se usan para romper en pedacitos las lineas de tiempo de codigo y despues volverlas a unirficar
+
+
