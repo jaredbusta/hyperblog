@@ -1,0 +1,2 @@
+hola que tal este es una prueba del uso del git reset HEAD
+a ver que tal sale

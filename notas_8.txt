@@ -5,7 +5,7 @@ stagin funciona en ram y se crea el repositorio ( carpeta  .git  )
 	el archivo esta espedando a que se envie al repositorio
 	commit => el archivo se va al repositorio
 		nombre por defecto del repositorio es  Master
-
+ 
 cuando el archivo no ha sido agregado, este se encuentra en estado untrack (sin rastrear )
 
 

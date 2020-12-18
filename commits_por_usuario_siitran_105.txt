@@ -1,0 +1,750 @@
+Carlos (68):
+      first commit
+      fisrt commit
+      Actualizacion, se agrego el archivo de chron, ademas de pruebas con reportes Jasper
+      Ultima Actualizacion
+      Primer comit Brach servicios y actualizacion de sftp
+      Se creo el tag query
+      Se crearon el servicio de tag y de informacion animal
+      Se termino el resto de servicios y probados
+      Primer Commit rafa conf
+      Creacion de controlador y  modificacion de vista
+      Termino de descarga de archivos
+      Se termino el formualrio para la bsuqueda animal, ademas se cambiaron los namespce de los modelos
+      Arreglo de tabla
+      Merge branch 'Reporte_Animal' of 192.168.1.89:siitran/siitran-y-costeo into Reporte_Animal
+      Cambio en el breadcrumbs de index
+      Cambio en _search
+      Posibilidad de colocar espacios en campo de aretes
+      Se agrego un scroll a la tabla cuando la vista es exitosa.
+      Se agrego la lista de las sesiones de trabajo y el buscado por estado y fecha
+      Se termino la cracion del reporte y la exportacion a excel, csv, html print
+      Se agrego la posibilidad de exportar PDF y se arreglo un problema en el buscador de sesiones
+      Se agrego el formato de numeros el reporte, se cambio el mensaje cuando no se encontraban sesiones.
+      Formato y limpieza de codigo
+      Cambio tamano de fuente en PDF
+      Se agrego el logo de siitran y se cambio el tamano de letra
+      Se termino el index para buscar las salidas y se empezo con el diseno del asignar destino a una salida.
+      Agregado el asignar destino y agreagr animales, reporte faltante pdf
+      Terminado Reporte_Salida
+      Se agrego ala opcion para elimianr animal
+      Revisar que animal no se encuentre en salida
+      LVista Lista
+      Cargador de XML terminado
+      Terminado servicio para agregar tags
+      Agregado a la respuesta el total de tags
+      Validar UHF vacios
+      Limpieza de variables
+      Migraciones creadas
+      Re-organizacion del proyecto
+      Cambio en README
+      Refactorizacion Animal
+      SC-31 Se agregaron los tags repeditos y fallidos a la respuesta del servidor.
+      SC-8 Implementado el patron de servicios y revisado con sonarlint
+      SC-9 Actualizado a nuevo patron y cambios en corte controller
+      SC-12 Limpieza de controlador
+      Creado MedicamentosQueri y Search
+      Creado MedicamentoService y agreagado al contructor del controlador
+      Termiando medicamento controller, ademas de actualizar corte y destino para usar la nueva estructura
+      Productor refactorizado
+      SC-16 Refactorizacion de salida terminada
+      Refactorizacion completada Corral Controller
+      SC-15 Terminado refactorizacion de trabajado
+      SC-2 Contructor en otra carpeta.
+      SC-1 Cambios en el Menu
+      Terminado CRUD Proveedores fase
+      Terminado calificacion de corrales
+      SC-40 Quitando VarDumps
+      Merge branch 'SC-40' into develop
+      SC-46 Modificar servicios para funcionar en JAVA
+      SC-48 Orden Tolva finalizado
+      SC-47 Pdf Hoja del tolvero finalizada
+      SC-47 Falto un archivo
+      SC-43 Terminado Aumento diario
+      SC-53 Configuraciones terminadas
+      SC-53 Recepciones y Cargador de tag terminados
+      Terminado servicio trampa
+      SC-52 Terminado Gate Services
+      SC-51 Migraciones terminadas
+      SC-62 Seeders
+
+Carlos Estrada (54):
+      Merge branch 'Servicios' into 'develop'
+      Merge branch 'Conf_Descarga' into 'develop'
+      Merge branch 'develop' into 'Reporte_Animal'
+      Merge branch 'Reporte_Animal' into 'develop'
+      Merge branch 'Reporte_Reimplante_Corte' into 'develop'
+      Merge branch 'Reporte_Reimplante_Corte_2' into 'develop'
+      Merge branch 'Reporte_Salida' into 'develop'
+      Merge branch 'Carga_XML' into 'develop'
+      Merge branch 'Servicio_Agregar_Tag' into 'develop'
+      Merge branch 'Creacion_migraciones' into 'develop'
+      Merge branch 'Reporte-de-Entrada' into 'develop'
+      Merge branch 'Ordenamiento_Proyecto' into 'develop'
+      Merge branch 'SC-31' into 'develop'
+      Merge branch 'SC-8' into 'develop'
+      Merge branch 'SC-9' into 'develop'
+      Merge branch 'SC-12' into 'develop'
+      Merge branch 'SC-13' into 'develop'
+      Merge branch 'SC-16' into 'develop'
+      Merge branch 'SC-6' into 'develop'
+      Merge branch 'SC-15' into 'develop'
+      Merge branch 'SC-2' into 'develop'
+      Merge branch 'SC-11' into 'develop'
+      Merge branch 'SC-1' into 'develop'
+      Merge branch 'SC-36' into 'develop'
+      Merge branch 'SC-46' into 'develop'
+      Merge branch 'SC-48' into 'develop'
+      Merge branch 'SC-47' into 'develop'
+      Merge branch 'develop' into 'SC-54'
+      Merge branch 'SC-53' into 'develop'
+      Merge branch 'SC-52' into 'develop'
+      Merge branch 'SC-59-Entrada-modificar-precio-real' into 'develop'
+      Merge branch 'SC-51' into 'develop'
+      Merge branch 'SC-61' into 'develop'
+      Merge branch 'SC-62' into 'develop'
+      SC-63 Agregado al tag el ultimo protocolo usado y los dias
+      SC-63 Cambio en servicios para mostrar dias rancho
+      Merge branch 'develop' into 'SC-63'
+      Merge branch 'SC-63' into 'develop'
+      SC-65 Cambios en migraciones
+      SC-65
+      SC-65 Cambios en servicios y modelos para funcionar con los cambios hechos en la base de datos
+      Cambios en PDF
+      Merge branch 'SC-73' into 'develop'
+      SC-79 Terminado implante en campo
+      SC-79 Centrar titulo y agregar valdiacion de 0
+      SC-79 Quitar numeros negativos input de cantidad
+      SC-79 Se arreglo el implantar con el array vacio
+      SC-79 Validar multiples ceros
+      SC-71 agreagado guardado de pesos por separado en entrada
+      Merge branch 'SC-71' into 'develop'
+      SC-74  Agregado porcentaje de maquilado
+      SC-74 Cambio por error en migraciones
+      SC-74 Agregado a CRUD campo de porcentaje extra
+      Merge branch 'SC-74' into 'develop'
+
+Enrique Alvarado (1):
+      Merge branch 'SC-87' into 'develop'
+
+Jared Bustamante (420):
+      Merge branch 'productores' into 'develop'
+      Merge branch 'develop' into 'controlAccso_usuario'
+      Merge branch 'controlAccso_usuario' into 'develop'
+      Update CorralController.php
+      Cambio de IDE
+      creacion de modulo esqueleto
+      buscador por siiniga, vista de resultado, formulario para dar de baja
+      cambia evento de baja al animal, guarada log en animal_log
+      guarda historial de enveto tag y valida que el animal no pueda volver a darse de baja
+      visualizador de documentos (guias y otros ) creacion de thumbnail
+      Merge branch 'develop' into 'Identificador-individual-SINIIGA'
+      Correccion de revision en merge From Identificador-individual-SINIIGA into develop
+      Merge branch 'Identificador-individual-SINIIGA' of 192.168.1.89:siitran/siitran-y-costeo into Identificador-individual-SINIIGA
+      modifica registro en tag con el ultimo evento y fecha hora. muestra el resultado tras generar una baja
+      validacion en busqueda de siniiga
+      Merge branch 'Identificador-individual-SINIIGA' into 'develop'
+      link en el menu
+      link
+      creacion de modelo, vistas y controlador para reporte de trabajado
+      vista reporte
+      reporteTrabajadoService nuevo
+      consulta y flujo de reporte, vista de  filtros y resultado
+      validacion por resultado vacio
+      pdf
+      reporte pdf
+      descarga pdf
+      terminado el proceso de reporte y generacion de pdf
+      Merge branch 'develop' into 'Reporte-de-trabajo-entre-fechas'
+      Correccion de datos pdf cuando  no se selecciona un tipo de trabajo
+      Merge branch 'Reporte-de-trabajo-entre-fechas' of 192.168.1.89:siitran/siitran-y-costeo into Reporte-de-trabajo-entre-fechas
+      frontend arreglado con m-porlet, agregado opcion de TODOS en tipos de trabajo. Botones de acciones con separacion listo.
+      implementacion de datatable en el reporte
+      se elimina el consecutivo 1 cuando no existen resultados en el reporte. Valida que solo pueda exportar a pdf cuando existan datos
+      Merge branch 'Reporte-de-trabajo-entre-fechas' into 'develop'
+      .
+      refactorizacion modulo completo
+      Merge branch 'SC-14-ProtocoloController' into 'develop'
+      Refactorizacion de modulo usando Animal.php IdentificacionAnimalController e IdentificacionAnimalService
+      .
+      link en lista de animal para redirccionar al resultado de busqueda siniiga.
+      primer comit de traslado individual de animal
+      views de traspaso, funciones preparadas para cambio de corral
+      modulo de trqaspaso individual. genera logs en corral log y tag log, reasiga corral nuevo al animal, recalcula los datos del corral origen y destino despues de la asingacion
+      Merge branch 'SC-3' into 'develop'
+      .
+      form de crud . falta validacion de decimales
+      validacion de numeros con punto decimal en formulario
+      muestra mensajes de validacion tras el submit
+      validacion en view
+      borrado el _search por que no se usa
+      Merge branch 'SC-34-Crud-de-fases' into 'develop'
+      link para agregar merma de fase
+      proceso de agregar mermas
+      .
+      validacion en captura de kilos de mermas
+      Merge branch 'SC-39' into 'develop'
+      opcion de surtir en index
+      surtido de merma, carga y descarga de pdf, registro de historial de surtido de fase
+      correccion de precio nuevo en la vista de resultado tras haber hecho un surtido
+      en formulario se restringe poder modificar el costo por kg y kg comprados, areglado la descarga de archivo de factura
+      Merge branch 'SC-38' into 'develop'
+      Merge branch 'SC-43' into 'develop'
+      aleta de cambio de fase
+      quitar using query de la clase
+      cron en schedule.php
+      Merge branch 'SC-54' into 'develop'
+      configuracion de rancho, datos generales y configuraciones generales
+      cambiando Rancho::find()->one() por usando findModel
+      Merge branch 'SC-55' into 'develop'
+      traspaso de corral a corral con registro de historiales
+      solo guarda corral_log con el  resumen del traspaso. funcion traspaso en Animal.php con parametro bool para guardar corral_log
+      control de acceso en los controllers
+      SC-49 opcion d e asignacion de roles y roles en backend invisible hasta login satisfactorio
+      add use a modelo Corral
+      SC-49 corte a corral en el menu, combio de My Yii Application a siitran en el page title
+      SC-49 Correccion de link para la descarga  de archivo de conf
+      use tpmanc\imagick\Imagick; para la creacion de  thumb  e implementacion en las guias y documentos relacionados al animal
+      Merge branch 'SC-49' into 'develop'
+      Merge branch 'SC-65' into 'develop'
+      Merge branch 'SC-79' into 'develop'
+      grafica de alimentacion en orden de tolva
+      usando servicios
+      SC-72 poner ultimas 3 calificaciones en lista de corrales de la orden de tolva
+      Merge branch 'SC-72' into 'develop'
+      function create
+      correccion de la palabra considieran a coincidieran
+      correccion en orden de grafica en orden de tolva. reporte de disponibilidad
+      migrate disponibilidad,update user; reporte de salida con costeo
+      Merge branch 'ReporteSalidaCostos' into 'develop'
+      reporte trabajado costeo
+      migration update user
+      Correcciones en validaciones de login, dashboard y esstilo de reporte de salida con costeo
+      Correccion en querys de dashoard ( ahora los filtros se hacen con filtro fecha (Y-m )
+      migrate user default. user:admin, pwd:123qwe
+      Merge branch 'develop' into 'pruebas'
+      correccion
+      Merge branch 'pruebas' of 192.168.1.89:siitran/siitran-y-costeo into pruebas
+      Merge branch 'pruebas' into 'develop'
+      migrate procedure
+      Merge branch 'pruebas' into 'develop'
+      procedure reporte_salida
+      Merge branch 'pruebas' into 'develop'
+      user default migrate
+      Merge branch 'pruebas' into 'develop'
+      email corregido
+      correcciones menores en tablas, diseños de reportes y datos presentados
+      correcciones menores, longitud de columna guias para que no haya desfase de tabla
+      Merge branch 'pruebas' into 'develop'
+      se agrego los modulos proveedor-fase y calificacioncorral al menu principal. correcccion de bug al no cap[turar costo_total del corral durante la creacion.  Se asigna la clave de corral formado por la contante C- y el contador durante la creacion masiva de corrales
+      Merge branch 'pruebas' into 'develop'
+      validaciones ajax en identificador animal. envio de documentacion animal por correo desde modulo de identifcacion animal
+      validacion de permisos en traspaso de corral
+      breadcrums en entradas abiertas
+      correccion find() por find()->where()
+      Merge branch 'pruebas' into 'develop'
+      homologacion de botones pdf y creacion de archivo pdf del reporte de disponibilidad
+      Merge branch 'pruebas' into 'develop'
+      reporte trabajado por fechas con filtros adicionales y resumenes de busqueda
+      quitar fechas fijas usadas para pruebas
+      Merge branch 'pruebas' into 'develop'
+      pdf reporte trabajado por fecha
+      correcciones en reporte de trabajado por fecha.
+      Merge branch 'pruebas' into 'develop'
+      correccion de valor para la conversion en el reporte trabajados por sesion  ( enviaba una excepcion por valor NaN )
+      Merge branch 'pruebas' into 'develop'
+      correccion de busqueda de ffiltro por productor en reporte de trabajados por fecha, busqueda de corral  en traspaso animal indiovudual. pdf de reporte trabajado por fecha, pdf de reporte de fases
+      correccion en traspaso individual, confirmacion de operacion y mensaje de resultado
+      correccion en traspaso
+      Merge branch 'pruebas' into 'develop'
+      xml tags,validacion reporte sesion estado=0, clave de corral en historial de siniiga
+      Merge branch 'develop' into 'pruebas'
+      Merge branch 'pruebas' into 'develop'
+      dashboard con cortes pendientes
+      Merge branch 'pruebas' of 192.168.1.89:siitran/siitran-y-costeo into pruebas
+      Merge branch 'pruebas' into 'develop'
+      correcion de traspaso
+      Merge branch 'pruebas' into 'develop'
+      correccion de fecha en dashboard
+      Merge branch 'pruebas' into 'develop'
+      isRedy en CargadorService
+      Merge branch 'pruebas' into 'develop'
+      carga de archivo enctriptado con tags nuevos
+      espacion
+      SC-87 reporte de exportacion, con salida a pdf
+      SC-87 totales en reporte de salida->costeo y quitar redondeo en kilos de aumento en la fase
+      SC-87 Correccion ya funciona cuando no se encontraron resultados
+      SC-87 muestra mensaje al no encontrar resultados de busqueda
+      SC-87 Correccion de total en reporte de salida. correccion de mensaje alerta en agregar siiniga a la salida. folio de entreada en identificador animal
+      Merge branch 'SC-87' into 'develop'
+      SC-87 correccion de filtro deleted en reporte de trabajo por fecha
+      Merge branch 'SC-87' into 'develop'
+      SC-93 pase de corte a salida
+      Merge branch 'SC-93' into 'develop'
+      Validacion para cerrar la  session trabajada
+      Merge branch 'SC-93' into 'develop'
+      SC-92 corral y numero de cabezas trabajados en lista de sesion de trabjao
+      Merge branch 'SC-93' into 'develop'
+      SC-91: Muestra el corral en el reporte html de sesion trabajados
+      Merge branch 'SC-91' into 'develop'
+      SC-91: filtrar deleted en reporte
+      Merge branch 'SC-91' into 'develop'
+      correccion
+      Merge branch 'SC-91' into 'develop'
+      SC-91 Filtro deleted en cabezas corte a corral y reporte trampa por sesion
+      Merge branch 'SC-91' into 'develop'
+      SC-91 agregar columnas destino y marca herrar origen en el reporte de exportacion (html y pdf )
+      SC-91 Marcas de herrar en reporte de exportacion
+      Merge branch 'SC-91' into 'develop'
+      SC-91 espacio mas grande en consecutivo del reporte de exportacion pdf
+      Merge branch 'SC-91' into 'develop'
+      SC-91: validacion de log animal y log tag duplicado
+      Merge branch 'SC-91' into 'develop'
+      SC-91 correccion reporte salida costeo
+      Merge branch 'SC-91' into 'develop'
+      SC-91:  correccion de validacion para logs repetidos en tag_log
+      SC-91 quitar var_dump
+      SC-99 lista de guias en reporte de trabajo por fecha
+      SC-98 quitar fechas hardcoded
+      Merge branch 'SC-99' into 'develop'
+      totales y promedios en reporte de costeo y pdf
+      SC-102 sumatorias y promedios en el footer de la tabla
+      Merge branch 'SC-102-Promedios-en-la-tabla-de-Reporte-de-salida-administrativo' into 'develop'
+      SC-105 Busqueda de evento inevntario
+      Merge branch 'SC-105' into 'develop'
+      SC-109 servicio de inventario
+      SC-105 correccion de invantario a inventario
+      Merge branch 'SC-105' into 'develop'
+      SC-109 Servicio de inventario.
+      SC-109
+      Merge branch 'develop' into 'SC-109'
+      Merge branch 'SC-109' into 'develop'
+      SC-106 nueva salida desde web
+      SC-106 correccion nuava a nueva
+      Merge branch 'SC-106' into 'develop'
+      SC-44 genera reporte disponibilidad desde cron y web
+      SC-44 genera disponibilidad con crontab y en web
+      SC-44 migrate agregar unique combinado fecha y id_corral
+      Merge branch 'SC-44' into 'develop'
+      SC-108 controllers de respaldo y disponibilidad
+      SC-108 subiendo de nuevo todo
+      SC-108 agregar campo % peso vivo y prom consumo individual al reporte html y pdf de disponibilidad
+      Merge branch 'SC-108' into 'develop'
+      SC-108 Se renombra las columnas PV en reporte html y pdf. Se modifica el index unique del archivo migrate de disponibilidad
+      Merge branch 'SC-108' into 'develop'
+      SC-108 Nuevo archivo con la creacion de index unique de la tabla disponibilidad
+      Merge branch 'SC-108' into 'develop'
+      SC-108 Correccion en migrate de tabla disponibilidad y disponibilidad_sp
+      Merge branch 'SC-108' into 'develop'
+      SC-108: Quitando die
+      Merge branch 'SC-108' into 'develop'
+      Correccion fecha de registro en animal
+      Validacion en log protocolos
+      data:image/png;base64, para mostrar marcas de herrar en salidas->asignar
+      convertir en porcentaje el valor de peso vivo en reporte de disponibilidad
+      Merge branch 'develop' of haja.dstec.com.mx:siitran/siitran-y-costeo into develop
+      SC-113: union y descarga de documentacion en salida
+      Merge branch 'SC-113' into 'develop'
+      SC-117 visualizador de facturas preliminares y reales
+      Merge branch 'SC-117' into 'develop'
+      modulo inventarios, correccion en reporte de costeo pdf ( total general )
+      Merge branch 'modulo_inventario_fotometria' into 'develop'
+      pruebas tensorflow js
+      SC-119: calculo de dias en corral en animal, calculo de dias promedio corral en clase Corral
+      Merge branch 'SC-119' into 'develop'
+      id_Corte default 1 para el evento INVENTARIO
+      SC-128 quitando el vardump que se muestra en el view de corral
+      SC-128 kilos de alimento individual de acuerdo al tiempo que estuvo en corral. agrupado por fase
+      SC-128 resumen de alimenacion individual y total gral de alimentacion en reporte de salida
+      Merge branch 'SC-128' into 'develop'
+      SC-114: subclasificacion de motivos de baja
+      SC-114 oculta el boton de guardar baja mientras no se haya seleccionado un motivo de baja
+      SC-114: archivos migrate para tablas tag_log_detalle y tipo_evento_tag_clasificacion
+      SC-114: se agrega lka fecha de impresion y el periodo de busqueda en el resumen del reporte de trabajo por fechas
+      Merge branch 'SC-114' into 'develop'
+      SC-138
+      SC-138:  se agrega la descripcion del trabajo en el pdf
+      Merge branch 'SC-138' into 'develop'
+      SC-125
+      SC-125: Correccion en el ordenado por columna CBZ en la tabla trabajado/index
+      SC-125:  Enter en resumen de fases
+      SC-125: enter en resumen de fases en footer
+      Merge branch 'SC-125' into 'develop'
+      SC-127
+      Merge branch 'SC-127' into 'develop'
+      SC-137
+      SC-137 sumarizado por group by en consulta
+      SC-137: columna de promedio alimento diario, agregar funcion de busqueda de solo corrales con servido real > 0
+      SC-137: subtotales en reportes
+      Merge branch 'SC-137--reporte-almentacion' into 'develop'
+      SC-126
+      Merge branch 'SC-126' into 'develop'
+      Reporte de traspasos completos de corral a corral
+      SC-142
+      Merge branch 'SC-142' into 'develop'
+      SC-142: correccion en el calculo de kilos en salida y uso del campo peso_estimado para los calculos en el reporte de costeo en salida
+      SC-142: modifica los calculos usando el peso_ estimado
+      correcciones
+      Merge branch 'SC-142' into 'develop'
+      actualizacion remota
+      importacion de archivo csv con relacion siniiga-guia
+      SC-142: archivos migrate de las nuevas tablas guias_transito y siniiga_guia
+      SC-143: quitar notones sin funcionamiento y el selector de rows por pagina
+      Merge branch 'SC-143' into 'develop'
+      SC-149 validador de proceso de aumento diario
+      SC-149: correccion del mensaje de confirmacion de pase de corral a corral
+      SC-149: se agrega los insert en el migrate de fechas
+      SC-149: correccion en migrate  m200221_000457_create_disponibildad_detalle
+      SC-149: correcciones
+      SC-149: se quita el return false
+      SC-149: se incluye la columna fecha con su valor a los insert de la tabla fechas
+      SC-149: cambio de tipo de dato de la columna fecha.
+      Merge branch 'SC-148-Alimentacion-mas-por-dia' into 'develop'
+      Merge branch 'SC-149' into 'develop'
+      SC-147 error de dedo en mensaje de confirmacion
+      SC-147: indicador de disas sin alimentacion en dashboard
+      Merge branch 'SC-147--union-de-calificacion-y-orden-de-tolva' into 'develop'
+      SC-147: correccion en el calculo de dias en dias pendientes de alimentacion
+      Merge branch 'SC-147--union-de-calificacion-y-orden-de-tolva' into 'develop'
+      SC:147 label para dropDown de seleccion de calificacion
+      SC-147: variable mensaje; setCalificacion() validacion en sugerencia de alimento
+      SC-147: limite en la canitdad de calificaciones motradas en orden de tolva
+      SC-147: agrega el metodo coucpados al query de corralLog
+      SC-147: agrega los insert para porciento corral sin alimento y num dias calificacion orden tolva en la tabla de configuraciones
+      SC-147: action Sugerencia. requiere id corral y calificacion
+      SC-147: agrega calificacionHoy y se modifica la funcion ordenar para poder guardar la calificacion del corral
+      SC-147:Calculo de sugerencia, retorna sugerido separado por servidas
+      SC-147: agrega columna Calificacion hoy a la tabla, funcion de calculo de sugerencia segun la calificacion, maneja el mensaje en caso de que no haya servido anterior
+      SC-147: formulario anterior de orden de tolva
+      SC-147: Quita el link de Calificacion Dia del menu
+      Merge branch 'SC-147--union-de-calificacion-y-orden-de-tolva' into 'develop'
+      SC-150: fullCalendar
+      SC-150: calendario para mostrar los dias en que hubo alimentacion
+      SC-150:full calendar
+      migrado reporte de disponibilidad a php y opcion con guardar observaciones a un corral dentro del reporte
+      Merge branch 'SC-150-migracion-reporte-disponibilidad' into 'develop'
+      Funcion para obtener los totales costo de corral
+      SC-151 reporte de disponibilidad con costos. generar pdf
+      SC-151: modificacion de tabla disponibilidad para agregar los campos de costos
+      SC-151: ahora la funcion getInfoUltimaFase() tiene el parametro fecha para calcular la diferencia desde el inicio de la fase hasta la fecha dada
+      SC-151: descripcion de columnas de costo en reporte en forma de referencias
+      Merge branch 'SC-151-disponibilidad-con-costos' into 'develop'
+      SC-151
+      Merge branch 'SC-151-disponibilidad-con-costos' into 'develop'
+      SC-151: disponibilidad con correcciones y validaciones en datos
+      Merge branch 'SC-151-disponibilidad-con-costos' into 'develop'
+      SC-151 cambio de nombre en el migrate disponibilidad costos
+      Merge branch 'SC-151-disponibilidad-con-costos' into 'develop'
+      SC-151: reporte salida costeo
+      SC-151: correccion en kilos aumento estimado
+      Merge branch 'SC-151-disponibilidad-con-costos' into 'develop'
+      SC-121: carga de csv para alimentar la los datos preliminares del ganado
+      SC-121: cmabio de titulo a la tabla de repetidos y boton de exp a excel en tabla de errores
+      SC-121: correccion en inicializacion de variables que vergüenza
+      Merge branch 'SC-121---importacin-de-informacion-Preliminar' into 'develop'
+      Correccion de calculo dias pendientes de alimentar
+      Merge branch 'SC-121---importacin-de-informacion-Preliminar' into 'develop'
+      Correccion en migrate de procedure reprote salida ( tenia doble BEGIN)
+      Merge branch 'SC-155--correccion-de-reprotes' into 'develop'
+      Correccion en calculo de dias pendientes de alimentacion para el proceso de aumento diario
+      correccion en el calculo del porcentaje de eficiencia ( antes de la grafica)
+      SC-135 correcciones reporte salida costeo. usando datos estimados y promedios sumultaneos
+      cambios en calculo de costo inicial cabeza segun el costo kilo capturado
+      Merge branch 'Correccion_asignacion_costo_kilo_entrada' into 'develop'
+      Merge branch 'develop' into 'SC-155--correccion-de-reprotes'
+      Merge branch 'SC-155--correccion-de-reprotes' into 'develop'
+      correccion de costos y conversion alimenticia en la seccion de calculos con datos promedios
+      otras cosas
+      mustra fecha de sesion cuando getSiguienteTraspaso no regresa resultado
+      getSiguientetraspaso muestra mensaje cuando no existe siguiente traspaso
+      Merge branch 'Correccion-de-costos-y-conversion-en-el-reporte-de-salida' into 'develop'
+      SC-156: recalculo de peso estimado; calculo de encabezado de salida; correccion procdure reporte salida;
+      Merge branch 'sc-122-ws-para-motrar-peso-de-origen-y-calcular-merma' into 'develop'
+      correcciones en reporte de salida
+      Merge branch 'develop' into 'Correccion_asignacion_costo_kilo_entrada'
+      Merge branch 'Correccion_asignacion_costo_kilo_entrada' into 'develop'
+      Merge branch 'SC-156--proceso-para-la-correccion-del-aumento-estimado' into 'develop'
+      SC-156: mas correcciones en reporte de salida costeo (LALO)
+      Merge branch 'SC-156' into 'develop'
+      quitando etiqueta roja de develop en layout/main .php
+      Merge branch 'SC-156' into 'develop'
+      quitando baneer de develop
+      quitando el link para modificar los pesos estimados
+      Merge branch 'preparacion-y-actualizacion-antes-de-empezar' into 'develop'
+      Se agrega al reporte de entradas el costo kilo inicial y el costo inicial cbz
+      Correccion del calculo de costo inicial en el actionCerrar
+      Se agregan los campos costo_kilo_inicial y costo_cbz en el prepareDataDetalle para poder ser mostrado en el reporte de entrada
+      Correccion en el calculo para lo servido de la orden de tolva
+      Merge branch 'Correcciones-despues-de-junta-con-armandito' into 'develop'
+      cambios en calculo de costocabeza en animallog, quita boton de recalculo de peso estimando, columna # mas grande en el reporte sesion costo
+      Marca el animal como salida en proceso
+      Filtra los animales salida_en_proceso=0 para ser mostrados en la lista de cortes en el modulo de cortaacorral
+      verificaSesiones ahora valida y marca las sesiones trabajadas que ya no tengan disponibles cortes por asignar o cortes que no se han asignado a salida
+      se agrega el campo salida_en_proceso en AnimalBase
+      agrega la columna salida_en_proceso en el migrate
+      longitud del campo salida_en_progreso solo 2 caracteres
+      Merge branch 'SC-164-bug-corte-a-salida' into 'develop'
+      quita la etiqueta  de develop jared
+      SC-164 correccion en corte a salida
+      Merge branch 'SC-164-bug-corte-a-salida' into 'develop'
+      Columna de alimento en reporte de sesion costo
+      Merge branch 'SC-159-columna-alimento-en-reporte-de-sesion-costeo' into 'develop'
+      SC-162: view html para el reporte de costeo por sesion
+      Merge branch 'SC-162-view-para-reporte-de-sesion-costeo-exportable-excel' into 'develop'
+      SC-160 reporte de sesion con informacion actual de animales
+      Merge branch 'SC-160-costeo-al-dia-en-reporte-por-sesion' into 'develop'
+      Correccion en calculo de costo actual kilo. Se debe usar el peso estimado para este calculo
+      SC-161: buscador de animales para mostrar el costeo individual al dia de la busqueda
+      SC-161 reporte costeo pdf
+      quitando siniiga hardoced
+      Merge branch 'SC-161-nuevo-reporte-de-costeo-(-tal-cual-reporte-de-sesion)-con-buscador-con-filtro-extendido' into 'develop'
+      SC-163 reporte incluye filtro entre fechas, exportacion excel y pdf, se agrega propiedad nueva is_merma en tipo_evento_tag, funcion getFechaSalida con filtro is_salida=1
+      SC-161 reporte de costeo, exportacion a pdf
+      quita boton de pdf datatable
+      Merge branch 'SC-163-reporte-de-mermas' into 'develop'
+      campo nuevo para conciliar la clave de corral de la tolva con el corral en siitran
+      control para capturar y visualizar la clave de corral en tolva
+      SC-158. se agrega la columna clave_fase_tolva
+      SC-158 mostrando el valor de clave corral tolva en index
+      SC-158: procesado de archivo separado por pipeline, mostrado resultado en dos tablas ( corrales alimentados, corrales no alimentados) exportacion de tabla de corrales no alimentados a archivo .csv
+      SC-158: columnas nuevas en tabla corral y fase ( para enlazar la clave de corral y clave fase  de la tolva con los datos usados en siitran
+      Merge branch 'SC-158-alimentacion-por-csv' into 'develop'
+      add columna clave_corral_tolva a tabla corral
+      Merge branch 'develop' of haja.dstec.com.mx:siitran/siitran-y-costeo into develop
+      SC-171
+      SC:171: muestra el resumen de los medicamentos aplicados durante la sesion
+      Merge branch 'SC-171--resumen-de-medicamentos-en-reporte-de-sesion' into 'develop'
+      cambio de theme siitran
+      visualizacion de opciones en el menu  segnu permisos de roles en yii
+      grafica de alimentacion ( anio,mes,semana,dia )
+      grafica inventario
+      nueva grafica de inventario
+      esperador con logo siitran
+      movimientos  de corral log para el dashboard
+      tabla de resumen con datos de corralLog
+      se quitan las columnas sugerido y costo y se agrega la columna % error de tolver
+      homogenizacion de resultado e iconografia para la tabla de movimientos diarios en dashboard ( animal_log y corral_log) falta tag_log y alimentacion_log
+      resumen de alimentacion para la tabla de movimientos en dashboard
+      se quitan los comentarios innecesarios, se reemplaza el date("") por el uso de la clase Fechas
+      quitando recursos inncecesarios del tema
+      iconos para entrada y salida en tabla de resumen diario
+      logo en svg
+      Merge branch 'SC-165--rediseño-de-menu-y-dashboard' into 'develop'
+      SC-168 vistas y extraccion de datos
+      validacion para mostar lista de entradas con animales ya trabajados
+      obtiene animales que no tienen guia asignada. Validacion para asignacionde siniigas a guia en frontend.
+      asignacion siniiga-guia, quita asingacion, modifica guia, productor y cbzs de guia, validacion para modificar cabezas
+      SC-168: formulario para agregar nuevas guias de transito desde el web
+      ya no permite modifciar la guia o el numero de cabezas de las guias de transito donde ya se tiene la asignacion de siniigas completada
+      link a nueva guia de transito, renombre de boton seleccionar a enlazar a guia de transito. mensje de confirmacion antes de hacer el enlace entre el siniiga y la guia seleccionada
+      migrate alter guias transito add cabezas, productor, migrate alter corral ( clave_corral_tolva); fase( clave_fase_tolva)
+      cambio en tablas corral y fase
+      se quita el class btn-elevate btn-icon para corregir la estetica de los botones
+      Merge branch 'SC-168-cotejo-de-entradas-y-guias' into 'develop'
+      se setea la clase breadcrumb-item a todos los elementos li de los breadcrumb ( para que haya espacio y diagonal entre  breadcrumb y breadcrumb)
+      quita console.log
+      Merge branch 'SC-168-cotejo-de-entradas-y-guias' into 'develop'
+      SC-168: estados por colores para entradas. funcion que muestra el detalle de los pesajes en cada entrada. se quita paginacion en lista de entradas. se elimina la opcion de mostrar entradas abiertas. formateo de numeros y fechas. se muestran las entradas del mes en curso
+      se cambia el mensaje que se muestra cuando no se encuentran entradas en la busqueda
+      cambio de la etiqueta del caliendario
+      Merge branch 'SC-168-cotejo-de-entradas-y-guias' into 'develop'
+
+Rodolfo Sanchez (167):
+      Iniciando  con todo
+      Servicio: Evento Trampa
+      Merge branch 'serviciosrodolfo' into 'master'
+      Servicio: Evento Gate
+      Servicio: Evento Gate Terminados Entrada, Salida. en salida guardando logs.
+      Merge branch 'develop' into 'nuevosServiciosRodolfo'
+      Merge branch 'nuevosServiciosRodolfo' into 'develop'
+      Formulario de entrada y asignacion del costo al corte
+      unnombre
+      Creacion del fomulario de captura de entrada, captura individual del costo por corte, Agregar archivos de guias y facturas
+      Agregado  campo de documentos adicionales
+      Merge branch 'rodolfoReporte_folios_entrada' into 'develop'
+      Iniciando el asignador de corte a corral.
+      Comit por el jaed
+      Merge branch 'develop' into 'rodo_Asignacion_corte_corral'
+      Merge branch 'rodo_Asignacion_corte_corral' into 'develop'
+      Arreglados errores que puso el Rojo
+      Iniciando de nuevo la branch para el issue de corte a corral
+      Procedimiento Corte a corral
+      Merge branch 'develop' into 'nuevorodocorteacorral'
+      Agregado cbz y kilos en los selec de corrales, y por defecto el seleccione...,
+      Merge branch 'nuevorodocorteacorral' of 192.168.1.89:siitran/siitran-y-costeo into nuevorodocorteacorral
+      Agregado mensaje de confirmacion al submit la forma.
+      Merge branch 'nuevorodocorteacorral' into 'develop'
+      validacion de cuando  el  animal esta muerto
+      Merge branch 'nuevorodocorteacorral' into 'develop'
+      Ejemplo de returns para el armado del dashboard
+      Funciones algunas
+      Merge branch 'rodoDashboardServicio' into 'dashboardView'
+      Merge branch 'dashboardView' into 'rodoDashboardServicio'
+      Dashboard de siitran
+      Merge branch 'develop' into 'rodoDashboardServicio'
+      Arreglada observacion de formato de numeros
+      Merge branch 'rodoDashboardServicio' into 'develop'
+      ultimos cambios
+      Merge branch 'rodoDashboardServicio' of 192.168.1.89:siitran/siitran-y-costeo into rodoDashboardServicio
+      Merge branch 'rodoDashboardServicio' into 'develop'
+      Agregado reporte de Entrada
+      Pequeños cambios
+      quietado  el / de mas
+      Modificaciones para validar el formulario de Entrada, y el Formulario del reporte de entradas x fecha
+      iniciando  la historia de CorteACorralController refactorizacion
+      Agregada libreria al Composer.json, Corte a corral, usando  funciones de recalculo en el modelo de corral.
+      Merge branch 'develop' into 'SC-7'
+      SC 7 Separe el guardado de log de corral en un nueva funcion
+      Merge branch 'SC-7' of 192.168.1.89:siitran/siitran-y-costeo into SC-7
+      Merge branch 'SC-7' into 'develop'
+      SC-10 Refactorizacion de Controlador de entradas.
+      Funciones de busqueda acomodadas dentro del  search
+      Merge branch 'SC-10-EntradaController' into 'develop'
+      Corregdo Erro en el Dashboard
+      CS-37 Agregados los archivos para CRUD
+      SC-37 Funcionalidades de CRUD implementadas. Copiadas de Destinos.
+      Correciones.
+      SC-37 Modificado el base crud en el  Guardar para que respete y muestre los mensajes del validate.
+      Merge branch 'SC-37-Crud-calificaciones-de-corrales-comederos' into 'develop'
+      Merge branch 'develop' into 'SC-34-Crud-de-fases'
+      SC-42 Modificado Corral y Corral query para agregar una busquda si  es recepcion y en query optener los corrales desplegables
+      SC-42 Guardar Servido real
+      SC-42 Validado el campo de kilos para que el  rango  sea positivo.
+      SC-42 Botones de  exportacion de la tabla retirados,
+      SC-42 a develop
+      SC-42 Reparada la integracion
+      Merge branch 'SC-42-Reparar' into 'develop'
+      SC-42 Guarda el Costo alimentacion y el Kilos alimento en el  animal.
+      Merge branch 'SC-42-Incremento-de-alimento-en-cada-animal-' into 'develop'
+      SC-59 Modificar entrada, Agregado acceso desde el index del modulo de entrada
+      Modificada la forma de captura de entrada , se muestra mas informacion y se desagrega animales con comentarios
+      SC-64 Commit para el jira
+      SC-64 Arreglado js que valida la captura de precios.
+      Merge branch 'SC-64-Retrabajo-modulo-de-captura-de-costos' into 'develop'
+      SC-80 CRU de veterinarios
+      Merge branch 'SC-80-Crud-de-veterinario' into 'develop'
+      Campo nuevo en animal
+      Migrate de user
+      Usuarios
+      Modificaciones User
+      Modificado para que funcione el servicio
+      Index agrergado
+      Arreglado corte a corral
+      Modificacion en el servicio de tags para que no tronara por un out of index
+      Costo alimento x costo alimentacion
+      medicamento a medicamentos
+      servicio arreglado
+      Entrada
+      Entrada
+      sesionTrabajadosSearch agregado el evento 23 que es reimplante en el filtro
+      modificado findModel en Trabajado service para agregarle la condicion where
+      test de correcion en el  reporte trabajado%2Freporte&id=X
+      Tes reporte
+      Corte a corral cuando  son nuevos animales
+      SC-84 Respaldo de modificaciones
+      SC-88 Calculo de costo x kilo en la captura de costos x corte
+      Merge branch 'SC-88-Costo-por-kilo' into 'develop'
+      SC-84 Agregados los calendarios con fechas x defecto y muestra la tabla
+      SC-84 Mensaje cuando  no hay registros para mostrar
+      Merge branch 'SC-84-HistorialCorral' into 'develop'
+      Agregador el Entrefecas
+      Merge branch 'SC-84-HistorialCorral' into 'develop'
+      Modificada la ruta en el  corral controller
+      Merge branch 'SC-84-HistorialCorral' into 'develop'
+      SC-99 Agregada la suma de cabezas, y los kilos promedios
+      agregado  "paging": false,
+      Merge branch 'SC-99-Suma-de-cabezas-en-Pase-de-corte-a-corral' into 'develop'
+      Modificacion para procesar los tags con espacios
+      Modificacion para ponerlo en inventario tambien
+      Merge branch 'Correxion-tag-unico' into 'develop'
+      "idProductor"=>"ifnull(a.id_productor,'')", en TagSearch
+      Merge branch 'SC-88-Costo-por-kilo' into 'develop'
+      Merge branch 'cherry-pick-e9eecbaf' into 'develop'
+      Controlados algunos mensajes de PHP Warning y PHP Notice
+      Pesos de animales en corte
+      Report all errors except E_NOTICE
+      yii debug false
+      yii sin dev
+      E_ERROR | E_WARNING | E_PARSE | E_NOTICE
+      no funciona con los pipies
+      Report all errors except E_NOTICE,E_NOTICE,E_WARNING
+      manejo de E_DEPRECATED
+      Merge branch 'develop' of 192.168.1.89:siitran/siitran-y-costeo into develop
+      Merge branch 'Correxion-ws-de-pase-x-gate-salida' into 'develop'
+      Eliminando segunda creacion de Disponibilidad
+      Sumatoria total arreglada
+      Merge branch 'Arreglos-en-Entradas-captura-de-costo' into 'develop'
+      Modificaciones al modulo de po-evento-tag-clasificacion%2Findex
+      Agregado al menu
+      Modificando breadcrums y relación de modulo
+      Merge branch 'SC-104-Eventos-de-tags-y-subclasificacion' into 'develop'
+      Merge branch 'SC-142' of 192.168.1.89:siitran/siitran-y-costeo into develop
+      Merge branch 'develop' of 192.168.1.89:siitran/siitran-y-costeo into develop
+      Agregado Detalle de Siinigas Afectados en corrales
+      Merge branch 'SC-107-SiinigaHistorico-en-corral' into 'develop'
+      el modulo de captura de alimento permite mas de una captura Grafica de alimento real corregida.
+      _modificacion frm cerrar
+      Merge branch 'SC-145-Modulo-entradas' into 'develop'
+      Modulo de siiniga guia
+      Modificado tipo de dato en el migrate, agregado al menu
+      Merge branch 'SC-144' into 'develop'
+      Modificaciones para validar archivos
+      Merge branch 'SC-135' into 'develop'
+      Corrección de ortografía en vista de animal
+      Merge branch 'develop' of haja.dstec.com.mx:siitran/siitran-y-costeo into develop
+      Agregado el filtro para solo mostrar corrales sin cabezas en Corral CorralSearch
+      Merge branch 'SC-118-Filtro-de-corrales-recepcion-con-animales' into 'develop'
+      Modificaciones para actualizar el  peso promedio
+      Modificado mensaje de guardado para diferenciar
+      validado "", " ", "0" en totoal kilos
+      Merge branch 'SC-115-Actualizar-peso-estimado-con-promedio-en-inventario' into 'develop'
+      Delete m191118_214046_disponibilidad_update_costos.php
+      Merge branch 'develop' into 'SC-155--correccion-de-reprotes'
+      Agregado WS para consultar datos preliminares
+      corrección siniiga
+      Precarga de costo por kilo previamente capturado
+      Arreglado en cortes especiales
+      formateado a 2 dec
+      Merge branch 'sc-154-ver-el-costo-calculado-por-cabeza-asignado-en-la-entrada' into 'develop'
+      lik a modulos
+      Merge branch 'SC-157-board-link' into 'develop'
+      Agregado el corral en el  archivo de tags
+      Agregado destinos al archivo de configuracion
+      Merge branch 'SC-174' into 'develop'
+      Modificado WS
+      Modificado buscador de animales para que no muestre error
+      Merge branch 'SC-169-Folios-de-entrada-en-aretado' into 'develop'
+      Merge branch 'InstalacionAutomaticaCorreccion' into 'develop'
+      modificaciones en ws
+      Merge branch 'SC-103-WS-proceso-de-salida' into 'develop'
+
+desarrollo de soluciones (7):
+      Fixed crlf issue
+      Arreglo de modificacion servidor
+      Merge branch 'develop' of 192.168.1.89:siitran/siitran-y-costeo into HEAD
+      Agregado modificaciones de pruebas
+      Cambios en pruebas
+      actualizado menu
+      Cambios en pruebas
+
+jared (12):
+      crud productores
+      crud productores
+      modelo corte
+      crud de corte
+      crud de productor_animal y cortes.
+      crud de productor_animal y cortes.
+      correccion en index_data... se agrego  Yii::$app->response->format = \yii\web\Response::FORMAT_JSON; y return : array
+      Crud de destinos y link https en el menu
+      quite el campo deleted del formulario destino
+      control de acceso. permisos en controladores... todo restringido
+      funcion para remover los permisos y roles que fueron eliminados de los actions de los controladores
+      <none>
+
+rodol (5):
+      Al momento de pasar al animal x gate este no cambiara su tag id_ultimo_evento hasta que se asigne x pa pagina web
+      Arreglado los archivos local en el API
+      Carpetas de Assets y el SFTP.json
+      Corrales en configuracion marcar destino y cerrar migrate que modifica detalle salida con 2 campos nuevos
+      Falto este archivo, destinoSearch
+
