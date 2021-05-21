@@ -28,3 +28,5 @@ ahora se mostraran los distintos formatos disponibles.
 ------------
 
 Tiene muchas cosas... se puede incrustar codigo HTML y el lenguaje es el mismo que utiliza la wikipedia
+
+este es un commit verificado en githube
